@@ -1,0 +1,214 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/animations.json",
+                "type": "animation",
+                "key": "animations"
+            },
+            {
+                "url": "assets/court.png",
+                "frameConfig": {
+                    "frameWidth": 640,
+                    "frameHeight": 480,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "court"
+            },
+            {
+                "url": "assets/ground.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "ground"
+            },
+            {
+                "url": "assets/harV.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "harV"
+            },
+            {
+                "url": "assets/items.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "items"
+            },
+            {
+                "url": "assets/Minecraft.ttf",
+                "format": "truetype",
+                "descriptors": {},
+                "type": "font",
+                "key": "Minecraft"
+            },
+            {
+                "url": "assets/new_area_640.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "new_area_640"
+            },
+            {
+                "url": "assets/new_area_normal.png",
+                "frameConfig": {
+                    "frameWidth": 1216,
+                    "frameHeight": 640,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "new_area_normal"
+            },
+            {
+                "url": "assets/pixel_font.ttf",
+                "format": "truetype",
+                "descriptors": {},
+                "type": "font",
+                "key": "pixel_font"
+            },
+            {
+                "url": "assets/PixelifySans-SemiBold.ttf",
+                "format": "truetype",
+                "descriptors": {},
+                "type": "font",
+                "key": "PixelifySans-SemiBold"
+            },
+            {
+                "url": "assets/props.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "props"
+            },
+            {
+                "url": "assets/ritual.png",
+                "frameConfig": {
+                    "frameWidth": 640,
+                    "frameHeight": 480,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "ritual"
+            },
+            {
+                "url": "assets/river.png",
+                "frameConfig": {
+                    "frameWidth": 640,
+                    "frameHeight": 480,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "river"
+            },
+            {
+                "url": "assets/speech.png",
+                "type": "image",
+                "key": "speech"
+            },
+            {
+                "url": "assets/sprite2.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "sprite2"
+            },
+            {
+                "url": "assets/stands.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "stands"
+            },
+            {
+                "url": "assets/structures.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "structures"
+            },
+            {
+                "url": "assets/test.png",
+                "frameConfig": {
+                    "frameWidth": 640,
+                    "frameHeight": 480,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "test"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false,
+        "visible": true
+    }
+}

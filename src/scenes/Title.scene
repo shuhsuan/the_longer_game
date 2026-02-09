@@ -1,0 +1,57 @@
+{
+    "id": "db3c4576-2aed-469c-a752-76e357c6bb09",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Title",
+        "borderWidth": 640,
+        "borderHeight": 480
+    },
+    "displayList": [
+        {
+            "type": "Rectangle",
+            "id": "9de1ec28-706a-408f-b859-280fc6b15a00",
+            "label": "rectangle_1",
+            "x": 318,
+            "y": 238,
+            "isFilled": true,
+            "fillColor": "#85642d",
+            "width": 645,
+            "height": 485
+        },
+        {
+            "type": "Text",
+            "id": "abae41f6-55ef-43d4-8ed9-9f488e78e205",
+            "label": "clickToStartText",
+            "x": 320,
+            "y": 402,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "CLICK TO START",
+            "align": "center",
+            "fontSize": "24px"
+        },
+        {
+            "type": "Text",
+            "id": "7013da9e-9ab7-4185-b629-3c9346453102",
+            "label": "titleText",
+            "x": 320,
+            "y": 240,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "THE LONG GAME",
+            "align": "center",
+            "fontSize": "48px"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

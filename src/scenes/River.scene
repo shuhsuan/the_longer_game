@@ -1,0 +1,36 @@
+{
+    "id": "6185d9c9-d524-4d1c-a150-bca0c2dc2c94",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "River",
+        "borderWidth": 640,
+        "borderHeight": 480
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "6d4366cc-5e2e-4a8a-8c04-3f1239d5d4ce",
+            "label": "river",
+            "texture": {
+                "key": "river",
+                "frame": 0
+            },
+            "x": 321,
+            "y": 238,
+            "animationPlayMethod": 1,
+            "animationKey": "river"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

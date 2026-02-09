@@ -1,0 +1,36 @@
+{
+    "id": "0b35edce-2be9-4b5a-9e40-0fde46461cca",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "importFileExtension": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Ritual",
+        "borderWidth": 640,
+        "borderHeight": 480
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "ae297275-5c22-401f-b64f-b09579132bfa",
+            "label": "ritual",
+            "texture": {
+                "key": "ritual",
+                "frame": 0
+            },
+            "x": 320,
+            "y": 241,
+            "animationPlayMethod": 1,
+            "animationKey": "ritual"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor - Scene Editor",
+        "url": "https://phaser.io/editor",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}
