@@ -3,7 +3,9 @@
 
 /* START OF COMPILED CODE */
 
+import PlayerPrefab from "../prefabs/PlayerPrefab.js";
 /* START-USER-IMPORTS */
+import DialogueManager from "../prefabs/DialogueManager.js";
 /* END-USER-IMPORTS */
 
 export default class Court extends Phaser.Scene {
@@ -23,6 +25,35 @@ export default class Court extends Phaser.Scene {
 		const court = this.add.sprite(321, 240, "court", 0);
 		court.play("court");
 
+		// playerPrefab
+		const playerPrefab = new PlayerPrefab(this, 465, 133);
+		this.add.existing(playerPrefab);
+
+		// puzzle_1
+		const puzzle_1 = this.add.rectangle(-1, -2, 640, 480);
+		puzzle_1.name = "puzzle_1";
+		puzzle_1.setOrigin(0, 0);
+		puzzle_1.visible = false;
+		puzzle_1.isFilled = true;
+
+		// elder
+		const elder = this.add.sprite(153, 246, "wise_elder", 13);
+		elder.scaleX = 1.2;
+		elder.scaleY = 1.2;
+		elder.play("elder");
+
+		// puzzle_2
+		const puzzle_2 = this.add.rectangle(154, 245, 20, 20);
+		puzzle_2.name = "puzzle_2";
+		puzzle_2.visible = false;
+		puzzle_2.isFilled = true;
+
+		// puzzle_3
+		const puzzle_3 = this.add.rectangle(321, 233, 20, 20);
+		puzzle_3.name = "puzzle_3";
+		puzzle_3.visible = false;
+		puzzle_3.isFilled = true;
+
 		this.events.emit("scene-awake");
 	}
 
@@ -33,7 +64,248 @@ export default class Court extends Phaser.Scene {
 	create() {
 
 		this.editorCreate();
+
+		this.editorCreate();
+
+		this.player = new PlayerPrefab(this, 465, 133);
+
+		this.dialogueManager = new DialogueManager(this);
+
+		this.dialogueManager.text.setColor("#f8f8f8");
+
+		// this.currentPuzzle = this.registry.get("puzzleProgress") ?? 0;
+		this.currentPuzzle = 0;
+
+		this.interacting = false;
+
+		this.input.keyboard.on("keydown-SPACE", () => {
+			if (this.dialogueManager.active) {
+				this.dialogueManager.next();
+			}
+		});
+
+
+		//collisions
+		this.collisionGroup = this.physics.add.staticGroup();
+		this.children.list.forEach(obj => {
+			if (obj.name && obj.name.startsWith("collision_")) {
+				this.physics.add.existing(obj, true);
+				this.collisionGroup.add(obj);
+			}
+		});
+		this.physics.add.collider(this.player, this.collisionGroup);
+
+		//success dialogue handling
+		this.events.on("puzzleCorrect", (puzzle) => {
+			if (puzzle.successDialogue?.length) {
+				this.dialogueManager.start(puzzle.successDialogue);
+
+				this.events.once("dialogueFinished", () => {
+					this.completePuzzle(puzzle);
+					this.interacting = false;
+				});
+
+			} else {
+				this.completePuzzle(puzzle);
+				this.interacting = false;
+			}
+		});
+
+		this.onDialogueFinished = (puzzle) => {
+			switch (puzzle.puzzleIndex) {
+				case 1:
+					this.completePuzzle(puzzle);
+					this.interacting = false;
+					break;
+				case 2: 
+					this.startPuzzleInput("peaches", puzzle);
+					break;
+			}
+
+			this.currentPuzzle = puzzle.puzzleIndex;
+			this.activePuzzle = null;
+
+		}
+
+		//triggers and dialogues
+		this.spaceKey = this.input.keyboard.addKey("SPACE");
+		this.puzzles = this.physics.add.staticGroup();
+
+		this.puzzles.children.iterate(puzzle => {
+			if (puzzle.puzzleIndex <= this.currentPuzzle) {
+				puzzle.body.checkCollision.none = true;
+				puzzle.setVisible(false);
+			}
+		});
+
+
+		this.children.list.forEach(obj => {
+			if (obj.name && obj.name.startsWith("puzzle_")) {
+				this.physics.add.existing(obj, true);
+				this.puzzles.add(obj);
+
+				obj.puzzleIndex = parseInt(obj.name.split("_")[1]);
+
+				switch (obj.puzzleIndex) {
+					case 1:
+						obj.dialogue = [
+							"Welcome welcome",
+							"This is the market court where you can find hidden items not available in other areas",
+							"Speak to the one who offers guidance to those who are lost"
+						],
+						obj.action = "dialogue";
+						break;
+
+					case 2:
+						obj.dialogue = [
+							"Elder: The bees debated, the butterflies listened, and the birds concluded:",
+							"not of iron or smoke, but of orchards kissed by dawn.",
+							"Elder: Tell me, wanderer… what fruit clings to your spirit?"
+						],
+						obj.successDialogue = [
+							"Elder: A peach is shaped by sun and soil, but sweetness comes from within.",
+							"Life gives you the branch -",
+							"but you decide which fruit you become.",
+							"And it seems you have",
+							"What a sweet, vibrant, and brilliant peach you have become Har the fifth",
+							"Kudos",
+							"Walk to the gathering circle where the stools stand empty",
+							"Sit, and listen. Your path forward from now will become clear."
+						]
+						obj.action = "dialogue";
+						break;
+					case 3: 
+						obj.dialogue = [
+							"loading.."
+						];
+						obj.action = "dialogue";
+						break;
+				}
+			}
+		});
+
+
+		//managing dialoge start and overlap on the screen
+		this.physics.add.overlap(this.player, this.puzzles, (player, puzzle) => {
+			if (this.typingActive) return;
+			if (!Phaser.Input.Keyboard.JustDown(this.spaceKey)) return;
+
+			console.log("Action:", puzzle.action);
+
+			if (puzzle.puzzleIndex !== this.currentPuzzle + 1) {
+				console.log("Wrong puzzle order!");
+				return;
+			}
+
+			this.interacting = true;
+
+			switch (puzzle.action) {
+
+				case "dialogue":
+					if (!this.dialogueManager.active) {
+						this.activePuzzle = puzzle;
+						this.dialogueManager.start(puzzle.dialogue);
+
+						this.events.once("dialogueFinished", () => {
+							if (this.activePuzzle) {
+								this.onDialogueFinished(this.activePuzzle);
+								this.activePuzzle = null;
+							}
+							this.interacting = false;
+						});
+					}
+					break;
+
+				case "scene":
+					this.currentPuzzle++;
+					this.completePuzzle(puzzle);
+					this.scene.switch(puzzle.targetScene);
+					break;
+			}
+		});
+
+		this.typed = "";
+		this.typingActive = false;
+
+		this.inputText = this.add.text(0, 387, "", {
+			fontSize: "20px",
+			fill: "#ffffff"
+		});
+
+		this.inputText.setVisible(false);
+
+
 	}
+
+	startPuzzleInput(expectedWord, puzzle) {
+
+		this.expectedWord = expectedWord;
+
+		this.inputPuzzle = puzzle;
+
+		this.typed = "";
+
+		this.typingActive = true;
+
+		this.inputText.setVisible(true);
+
+		puzzle.body.enable = false
+
+		this.typeHandler = (e) => {
+
+
+			if (!this.typingActive) return;
+
+			if (e.key === "Enter") {
+				this.checkAnswer(this.typed);
+			}
+			else if (e.key === "Backspace") {
+				this.typed = this.typed.slice(0, -1);
+			}
+			else if (e.key.length === 1) {
+				this.typed += e.key;
+			}
+
+			this.inputText.setText(this.typed);
+		};
+
+		this.input.keyboard.on("keydown", this.typeHandler);
+
+
+	}
+
+
+
+	checkAnswer(word) {
+		if (word.toLowerCase() === this.expectedWord) {
+			console.log("Correct!");
+
+			this.typingActive = false;
+			this.input.keyboard.off("keydown", this.typeHandler);
+			this.inputText.setVisible(false);
+
+			this.events.emit("puzzleCorrect", this.inputPuzzle)
+
+		} else {
+			console.log("Wrong!");
+			this.typed = "";
+		}
+	}
+
+	completePuzzle(puzzle) {
+		console.log("Completed puzzle", puzzle.puzzleIndex);
+
+		this.registry.set("puzzleProgress", this.currentPuzzle);
+		puzzle.body.checkCollision.none = true;
+		puzzle.setVisible(false);
+	}
+
+	update() {
+		if (this.player && !this.typingActive) {
+			this.player.update()
+		}
+	}
+
 
 	/* END-USER-CODE */
 }

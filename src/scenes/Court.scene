@@ -24,6 +24,70 @@
             "y": 240,
             "animationPlayMethod": 1,
             "animationKey": "court"
+        },
+        {
+            "prefabId": "3ea1c08f-f385-43d6-9825-802596c52b31",
+            "id": "28aa9fc8-ffc2-4c14-8488-9fd12286d97b",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "playerPrefab",
+            "x": 465,
+            "y": 133
+        },
+        {
+            "type": "Rectangle",
+            "id": "d6850b24-122d-4a04-8dc2-8bd758cd2042",
+            "label": "puzzle_1",
+            "useGameObjectName": true,
+            "x": -1,
+            "y": -2,
+            "originX": 0,
+            "originY": 0,
+            "visible": false,
+            "isFilled": true,
+            "width": 640,
+            "height": 480
+        },
+        {
+            "type": "Sprite",
+            "id": "542dba45-1c3b-4d4c-a2a9-f2a18214989e",
+            "label": "elder",
+            "texture": {
+                "key": "wise_elder",
+                "frame": 13
+            },
+            "x": 153,
+            "y": 246,
+            "scaleX": 1.2,
+            "scaleY": 1.2,
+            "animationPlayMethod": 1,
+            "animationKey": "elder"
+        },
+        {
+            "type": "Rectangle",
+            "id": "ec0d7a7a-f004-4a30-bf68-a8f17c47cfb7",
+            "label": "puzzle_2",
+            "useGameObjectName": true,
+            "x": 154,
+            "y": 245,
+            "visible": false,
+            "isFilled": true,
+            "width": 20,
+            "height": 20
+        },
+        {
+            "type": "Rectangle",
+            "id": "7c46d91c-4f73-4ff9-a921-7ea38028e2ec",
+            "label": "puzzle_3",
+            "useGameObjectName": true,
+            "x": 321,
+            "y": 233,
+            "visible": false,
+            "isFilled": true,
+            "width": 20,
+            "height": 20
         }
     ],
     "plainObjects": [],

@@ -24,6 +24,151 @@
             "y": 238,
             "animationPlayMethod": 1,
             "animationKey": "river"
+        },
+        {
+            "prefabId": "3ea1c08f-f385-43d6-9825-802596c52b31",
+            "id": "498042b9-7c30-4966-b1eb-028fc180a978",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "playerPrefab",
+            "x": 598,
+            "y": 215
+        },
+        {
+            "type": "Rectangle",
+            "id": "e8bc3d1b-54a9-4381-a850-1cceb244b7c0",
+            "label": "puzzle_1",
+            "useGameObjectName": true,
+            "x": 287,
+            "y": 130,
+            "originX": 0.45,
+            "originY": 0.28,
+            "visible": false,
+            "isFilled": true,
+            "width": 640,
+            "height": 489
+        },
+        {
+            "type": "Rectangle",
+            "id": "ef61dfb1-68d8-4702-9787-8000ce06530d",
+            "label": "puzzle_2",
+            "useGameObjectName": true,
+            "x": 317,
+            "y": 138,
+            "visible": false,
+            "isFilled": true,
+            "width": 30,
+            "height": 30
+        },
+        {
+            "type": "Rectangle",
+            "id": "e954cd49-c133-4586-a42f-579e7e133b4f",
+            "label": "puzzle_3",
+            "useGameObjectName": true,
+            "x": 223,
+            "y": 344,
+            "visible": false,
+            "isFilled": true,
+            "width": 20,
+            "height": 20
+        },
+        {
+            "type": "Rectangle",
+            "id": "eb64c11e-04b9-44a2-a44c-1331620d36aa",
+            "label": "puzzle_4",
+            "useGameObjectName": true,
+            "x": 506,
+            "y": 193,
+            "visible": false,
+            "isFilled": true,
+            "width": 30,
+            "height": 20
+        },
+        {
+            "type": "Rectangle",
+            "id": "e9c564dc-79ea-4542-8e76-a449e338d72d",
+            "label": "puzzle_5",
+            "useGameObjectName": true,
+            "x": 159,
+            "y": 247,
+            "visible": false,
+            "isFilled": true,
+            "width": 30,
+            "height": 30
+        },
+        {
+            "type": "Rectangle",
+            "id": "ad7c8ebc-5c77-406e-9356-c700ca5ad579",
+            "label": "puzzle_7",
+            "useGameObjectName": true,
+            "x": 54,
+            "y": 184,
+            "visible": false,
+            "isFilled": true,
+            "width": 20,
+            "height": 20
+        },
+        {
+            "type": "Sprite",
+            "id": "3029abf8-56ce-4d19-b2ba-11216d293a30",
+            "label": "flying_eye",
+            "useGameObjectName": true,
+            "texture": {
+                "key": "flying_eye",
+                "frame": 0
+            },
+            "x": 151,
+            "y": 249,
+            "scaleX": 2,
+            "scaleY": 2,
+            "animationPlayMethod": 1,
+            "animationKey": "flying_eye"
+        },
+        {
+            "type": "Sprite",
+            "id": "8c8e6fd5-ca81-4ff3-b622-70f2507f17ba",
+            "label": "merchant",
+            "useGameObjectName": true,
+            "texture": {
+                "key": "Merchant",
+                "frame": 1
+            },
+            "x": 320,
+            "y": 133,
+            "scaleX": 1.2,
+            "scaleY": 1.2,
+            "animationPlayMethod": 1,
+            "animationKey": "merchant"
+        },
+        {
+            "type": "Sprite",
+            "id": "f92dc784-1a0d-4244-a067-f7daf4a9ed60",
+            "label": "tent_guy",
+            "useGameObjectName": true,
+            "texture": {
+                "key": "sprite2",
+                "frame": 397
+            },
+            "x": 555,
+            "y": 336,
+            "scaleX": 1.2,
+            "scaleY": 1.2,
+            "animationPlayMethod": 1,
+            "animationKey": "tent_guy"
+        },
+        {
+            "type": "Rectangle",
+            "id": "adca4c5d-4fbe-42b2-aef2-0ddd7edd9f36",
+            "label": "puzzle_6",
+            "useGameObjectName": true,
+            "x": 554,
+            "y": 339,
+            "visible": false,
+            "isFilled": true,
+            "width": 20,
+            "height": 20
         }
     ],
     "plainObjects": [],

@@ -159,7 +159,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 8,
             "skipMissedFrames": true,
             "repeat": -1,
             "randomFrame": false
@@ -313,7 +313,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 8,
             "skipMissedFrames": true,
             "repeat": -1,
             "randomFrame": false
@@ -467,7 +467,7 @@
                     "keyframe": false
                 }
             ],
-            "frameRate": 24,
+            "frameRate": 8,
             "skipMissedFrames": true,
             "repeat": -1,
             "randomFrame": false
@@ -604,6 +604,252 @@
                 }
             ],
             "frameRate": 6,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "elder",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "wise_elder",
+                    "frame": 13,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "wise_elder",
+                    "frame": 14,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "wise_elder",
+                    "frame": 15,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "wise_elder",
+                    "frame": 16,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 6,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "merchant",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "Merchant",
+                    "frame": 1,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Merchant",
+                    "frame": 2,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Merchant",
+                    "frame": 3,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "Merchant",
+                    "frame": 4,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 3,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "blacksmith",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "blacksmith",
+                    "frame": 36,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blacksmith",
+                    "frame": 37,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blacksmith",
+                    "frame": 38,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blacksmith",
+                    "frame": 39,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blacksmith",
+                    "frame": 40,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blacksmith",
+                    "frame": 41,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "blacksmith",
+                    "frame": 42,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 12,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "flying_eye",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "flying_eye",
+                    "frame": 0,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "flying_eye",
+                    "frame": 1,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "flying_eye",
+                    "frame": 2,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "flying_eye",
+                    "frame": 3,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 7,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "slime",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "slime",
+                    "frame": 131,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slime",
+                    "frame": 133,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slime",
+                    "frame": 135,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slime",
+                    "frame": 137,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slime",
+                    "frame": 139,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "slime",
+                    "frame": 141,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 10,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "tent_guy",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "sprite2",
+                    "frame": 397,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "sprite2",
+                    "frame": 399,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "sprite2",
+                    "frame": 401,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "sprite2",
+                    "frame": 403,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "sprite2",
+                    "frame": 401,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "sprite2",
+                    "frame": 399,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 3,
             "skipMissedFrames": true,
             "repeat": -1,
             "randomFrame": false

@@ -7,6 +7,19 @@
                 "key": "animations"
             },
             {
+                "url": "assets/blacksmith.png",
+                "frameConfig": {
+                    "frameWidth": 25,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "blacksmith"
+            },
+            {
                 "url": "assets/court.png",
                 "frameConfig": {
                     "frameWidth": 640,
@@ -18,6 +31,19 @@
                 },
                 "type": "spritesheet",
                 "key": "court"
+            },
+            {
+                "url": "assets/flying_eye.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "flying_eye"
             },
             {
                 "url": "assets/ground.png",
@@ -57,6 +83,19 @@
                 },
                 "type": "spritesheet",
                 "key": "items"
+            },
+            {
+                "url": "assets/Merchant.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 21,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "Merchant"
             },
             {
                 "url": "assets/Minecraft.ttf",
@@ -145,6 +184,19 @@
                 "key": "river"
             },
             {
+                "url": "assets/slime.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "slime"
+            },
+            {
                 "url": "assets/speech.png",
                 "type": "image",
                 "key": "speech"
@@ -200,6 +252,32 @@
                 },
                 "type": "spritesheet",
                 "key": "test"
+            },
+            {
+                "url": "assets/village_hill.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "village_hill"
+            },
+            {
+                "url": "assets/wise_elder.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "wise_elder"
             }
         ]
     },

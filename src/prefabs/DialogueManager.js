@@ -55,19 +55,26 @@ export default class DialogueManager {
         this.text.setText(textToShow);
     }
 
+    showLine(){
+        this.text.setText(this.dialogueQueue[this.currentIndex]);
+    }
+
     next() {
-        this.currentIndex++;
-        if (this.currentIndex >= this.dialogueQueue.length) {
+        if(this.currentIndex >= this.dialogueQueue.length -1){
             this.end();
-        } else {
-            this.showCurrent();
+            return;
         }
+        this.currentIndex++;
+        this.showLine();
     }
 
     end() {
         this.active = false;
         this.text.setVisible(false);
         this.dialogueQueue = [];
+        this.currentIndex = 0;
+
+        this.scene.events.emit("dialogueFinished")
 
         // Unfreeze player
         if (this.scene.player) this.scene.player.canMove = true;

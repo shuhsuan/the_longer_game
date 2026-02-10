@@ -17,7 +17,7 @@ export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 		this.setCollideWorldBounds(true);
 
 		this.cursors = scene.input.keyboard.createCursorKeys();
-		this.speed = 150;
+		this.speed = 300;
 
 		this.play("player_idle");
 
@@ -25,16 +25,6 @@ export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
-
-	// update(){
-	// 	this.setVelocity(0);
-
-	// 	if(this.cursors.left.isDown) {this.setVelocityX(-this.speed)}
-	// 	else if(this.cursors.right.isDown) {this.setVelocityX(this.speed)}
-
-	// 	if(this.cursors.up.isDown) {this.setVelocityY(-this.speed)}
-	// 	else if(this.cursors.down.isDown) {this.setVelocityY(this.speed)}
-	// }
 
 	update() {
     this.setVelocity(0);
