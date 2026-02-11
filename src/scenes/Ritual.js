@@ -250,7 +250,7 @@ export default class Ritual extends Phaser.Scene {
 								"Congrats!",
 								"If you find the exit to this place, go through the archway to meet the one who kidnapped and started you on this arduous journey",
 								"I'm sure you have a lot to say to her but your dialogue is a fixed and fated course unfortunately",
-								"Go and collect your prize anyway!"
+								"The prize might be worth collecting anyway!"
 							],
 							obj.action = 'dialogue'
 						break;

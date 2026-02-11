@@ -459,7 +459,7 @@ export default class Field3 extends Phaser.Scene {
 					this.startPuzzleInput("brewery", puzzle);
 					break;
 				case 10:
-					this.startPuzzleInput("53", puzzle);
+					this.startPuzzleInput("78", puzzle);
 					break;
 				case 11:
 					this.completePuzzle(puzzle);
@@ -620,8 +620,10 @@ export default class Field3 extends Phaser.Scene {
 							"And maybe perhaps tired of restarting too",
 							"But I'm afraid I'm out of time and out of options",
 							"So I will use yours, thank you",
-							"How many of these world prompts have occured, not including the ones that started when you entered this area?",
-							"(World prompts meaning, not spoken by a named friend ..thing)"
+							"How many of these dialogue lines have been spoken by me, your mysterious guide?",
+							"(not spoken by a named friend ..thing)",
+							"Not including the ones that have occurred right this moment",
+							"Sorry not sorry"
 						]
 						obj.successDialogue = [
 							"Nice, I'm sure you're wondering who I am",
