@@ -61,7 +61,7 @@ export default class Title extends Phaser.Scene {
 
 		this.input.once(Phaser.Input.Events.POINTER_DOWN, () => {
 			this.titleMusic.stop();
-			this.scene.start('River')
+			this.scene.start('Field3')
 		})
 	}
 	/* END-USER-CODE */
