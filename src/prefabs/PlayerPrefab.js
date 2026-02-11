@@ -8,60 +8,73 @@
 
 export default class PlayerPrefab extends Phaser.Physics.Arcade.Sprite {
 
-	constructor(scene, x, y, texture, frame) {
-		super(scene, x ?? 0, y ?? 0, texture || "harV", frame ?? 35);
+    constructor(scene, x, y, texture, frame) {
+        super(scene, x ?? 0, y ?? 0, texture || "harV", frame ?? 35);
 
-		scene.add.existing(this);
-		scene.physics.add.existing(this);
+        scene.add.existing(this);
+        scene.physics.add.existing(this);
 
-		this.setCollideWorldBounds(true);
+        this.setCollideWorldBounds(true);
 
-		this.cursors = scene.input.keyboard.createCursorKeys();
-		this.speed = 300;
+        this.cursors = scene.input.keyboard.createCursorKeys();
+        this.speed = 150;
 
-		this.play("player_idle");
+        this.play("player_idle");
 
-		/* START-USER-CTR-CODE */
-		// Write your code here.
-		/* END-USER-CTR-CODE */
-	}
+        /* START-USER-CTR-CODE */
+        // Write your code here.
 
-	update() {
-    this.setVelocity(0);
-    let dir = null;
-
-    if (this.cursors.left.isDown) {
-        this.setVelocityX(-this.speed);
-        dir = "left";
-    }
-    else if (this.cursors.right.isDown) {
-        this.setVelocityX(this.speed);
-        dir = "right";
+        this.runSound = scene.sound.add('running1', { loop: true, volume: 0.8 });
+        this.isRunningSoundPlaying = false;
+        /* END-USER-CTR-CODE */
     }
 
-    if (this.cursors.up.isDown) {
-        this.setVelocityY(-this.speed);
-        dir = "up";
-    }
-    else if (this.cursors.down.isDown) {
-        this.setVelocityY(this.speed);
-        dir = "down";
-    }
+    update() {
+        this.setVelocity(0);
+        let dir = null;
 
-    if (dir) {
-        const anim = "player_" + dir;
-        if (this.anims.currentAnim?.key !== anim) {
-            this.anims.play(anim);
+        if (this.cursors.left.isDown) {
+            this.setVelocityX(-this.speed);
+            dir = "left";
         }
-        this.lastDir = dir;
-    } 
-    else if (this.lastDir) {
-		if(this.lastDir == "down"){
-			 this.anims.play("player_idle", true);
-		}
-		else{
-        this.anims.play("player_idle_" + this.lastDir, true);
-		}
+        else if (this.cursors.right.isDown) {
+            this.setVelocityX(this.speed);
+            dir = "right";
+        }
+
+        if (this.cursors.up.isDown) {
+            this.setVelocityY(-this.speed);
+            dir = "up";
+        }
+        else if (this.cursors.down.isDown) {
+            this.setVelocityY(this.speed);
+            dir = "down";
+        }
+
+        if (dir) {
+            const anim = "player_" + dir;
+            if (this.anims.currentAnim?.key !== anim) {
+                this.anims.play(anim);
+            }
+            this.lastDir = dir;
+
+            if (!this.isRunningSoundPlaying) {
+                this.runSound.play();
+                this.isRunningSoundPlaying = true;
+            }
+        }
+        else if (this.lastDir) {
+            if (this.lastDir == "down") {
+                this.anims.play("player_idle", true);
+            }
+            else {
+                this.anims.play("player_idle_" + this.lastDir, true);
+            }
+
+            if (this.isRunningSoundPlaying) {
+                this.runSound.stop();
+                this.isRunningSoundPlaying = false;
+            }
+        }
     }
-}
 }

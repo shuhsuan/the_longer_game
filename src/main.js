@@ -4,6 +4,7 @@ import Field3 from "./scenes/Field3.js";
 import Court from "./scenes/Court.js";
 import Ritual from "./scenes/Ritual.js";
 import River from "./scenes/River.js";
+import creator2 from "./scenes/creator2.js";
 
 window.addEventListener('load', function () {
 
@@ -19,7 +20,7 @@ window.addEventListener('load', function () {
 		physics: {
 			default: 'arcade',
 			arcade: {
-				debug: true
+				debug: false
 			}
 		}
 	});
@@ -31,5 +32,6 @@ window.addEventListener('load', function () {
 	game.scene.add("Court", Court);
 	game.scene.add("River", River);
 	game.scene.add("Ritual", Ritual);
+	game.scene.add("creator2", creator2);
 	game.scene.add("Preload", Preload, true);
 });

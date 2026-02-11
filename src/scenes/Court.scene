@@ -88,6 +88,119 @@
             "isFilled": true,
             "width": 20,
             "height": 20
+        },
+        {
+            "type": "Sprite",
+            "id": "be513daa-48ad-466c-ae73-631b6ec104de",
+            "label": "slime",
+            "texture": {
+                "key": "slime",
+                "frame": 131
+            },
+            "x": 145,
+            "y": 108,
+            "scaleX": 3,
+            "scaleY": 3,
+            "animationPlayMethod": 1,
+            "animationKey": "slime"
+        },
+        {
+            "type": "Rectangle",
+            "id": "9bf506f1-66e7-4db7-9825-3f0eed653756",
+            "label": "puzzle_4",
+            "useGameObjectName": true,
+            "x": 145,
+            "y": 128,
+            "visible": false,
+            "isFilled": true,
+            "width": 25,
+            "height": 20
+        },
+        {
+            "type": "Rectangle",
+            "id": "5dc70f28-3a19-4bd0-b955-14a43b8b51fd",
+            "label": "puzzle_5",
+            "useGameObjectName": true,
+            "x": 152,
+            "y": 387,
+            "visible": false,
+            "isFilled": true,
+            "width": 20,
+            "height": 20
+        },
+        {
+            "type": "Image",
+            "id": "5bdec4e2-7e9e-4080-a506-a41aefc7a529",
+            "label": "chesst_puzzle",
+            "useGameObjectName": true,
+            "texture": {
+                "key": "chess_puzzle1"
+            },
+            "x": 309,
+            "y": 252,
+            "scaleX": 0.4,
+            "scaleY": 0.4,
+            "visible": false
+        },
+        {
+            "type": "Rectangle",
+            "id": "b9c29125-8061-4c94-8e09-f27ea28f6b67",
+            "label": "puzzle_6",
+            "useGameObjectName": true,
+            "x": 508,
+            "y": 358,
+            "visible": false,
+            "isFilled": true,
+            "width": 20,
+            "height": 20
+        },
+        {
+            "type": "Rectangle",
+            "id": "02ea9e4a-8caf-4ba5-9228-8a86e15183f7",
+            "label": "collision_border1",
+            "useGameObjectName": true,
+            "x": 252,
+            "y": 62,
+            "visible": false,
+            "isFilled": true,
+            "width": 500,
+            "height": 10
+        },
+        {
+            "type": "Rectangle",
+            "id": "d3e0a888-d576-4014-a7ff-9b03438c29a4",
+            "label": "collision_border2",
+            "useGameObjectName": true,
+            "x": 62,
+            "y": 415,
+            "visible": false,
+            "isFilled": true,
+            "width": 120,
+            "height": 10
+        },
+        {
+            "type": "Rectangle",
+            "id": "4fa53532-4297-4239-8e30-c7fd6ec6e347",
+            "label": "collision_border3",
+            "useGameObjectName": true,
+            "x": 583,
+            "y": 62,
+            "visible": false,
+            "isFilled": true,
+            "width": 120,
+            "height": 10
+        },
+        {
+            "type": "Rectangle",
+            "id": "a55df6d5-489b-49ad-b0d3-d77299e8f954",
+            "label": "collision_border4",
+            "useGameObjectName": true,
+            "x": 389,
+            "y": 418,
+            "visible": false,
+            "isFilled": true,
+            "width": 500,
+            "height": 10
         }
     ],
     "plainObjects": [],

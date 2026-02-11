@@ -25,10 +25,6 @@ export default class River extends Phaser.Scene {
 		const river = this.add.sprite(321, 238, "river", 0);
 		river.play("river");
 
-		// playerPrefab
-		const playerPrefab = new PlayerPrefab(this, 598, 215);
-		this.add.existing(playerPrefab);
-
 		// puzzle_1
 		const puzzle_1 = this.add.rectangle(287, 130, 640, 489);
 		puzzle_1.name = "puzzle_1";
@@ -93,6 +89,84 @@ export default class River extends Phaser.Scene {
 		puzzle_6.visible = false;
 		puzzle_6.isFilled = true;
 
+		// collision_1
+		const collision_1 = this.add.rectangle(440, 201, 50, 10);
+		collision_1.name = "collision_1";
+		collision_1.visible = false;
+		collision_1.isFilled = true;
+
+		// collision_2
+		const collision_2 = this.add.rectangle(441, 237, 50, 10);
+		collision_2.name = "collision_2";
+		collision_2.visible = false;
+		collision_2.isFilled = true;
+
+		// collision_3
+		const collision_3 = this.add.rectangle(419, 276, 10, 80);
+		collision_3.name = "collision_3";
+		collision_3.visible = false;
+		collision_3.isFilled = true;
+
+		// collision_4
+		const collision_4 = this.add.rectangle(462, 316, 10, 160);
+		collision_4.name = "collision_4";
+		collision_4.visible = false;
+		collision_4.isFilled = true;
+
+		// collision_5
+		const collision_5 = this.add.rectangle(386, 360, 10, 80);
+		collision_5.name = "collision_5";
+		collision_5.visible = false;
+		collision_5.isFilled = true;
+
+		// collision_6
+		const collision_6 = this.add.rectangle(354, 394, 10, 30);
+		collision_6.name = "collision_6";
+		collision_6.visible = false;
+		collision_6.isFilled = true;
+
+		// collision_9
+		const collision_9 = this.add.rectangle(418, 141, 10, 130);
+		collision_9.name = "collision_9";
+		collision_9.visible = false;
+		collision_9.isFilled = true;
+
+		// collision_10
+		const collision_10 = this.add.rectangle(461, 168, 10, 80);
+		collision_10.name = "collision_10";
+		collision_10.visible = false;
+		collision_10.isFilled = true;
+
+		// collision_11
+		const collision_11 = this.add.rectangle(548, 122, 160, 10);
+		collision_11.name = "collision_11";
+		collision_11.visible = false;
+		collision_11.isFilled = true;
+
+		// collision_12
+		const collision_12 = this.add.rectangle(393, 59, 500, 10);
+		collision_12.name = "collision_12";
+		collision_12.visible = false;
+		collision_12.isFilled = true;
+
+		// collision_13
+		const collision_13 = this.add.rectangle(61, 60, 120, 10);
+		collision_13.name = "collision_13";
+		collision_13.visible = false;
+		collision_13.isFilled = true;
+
+		// collision_14
+		const collision_14 = this.add.rectangle(580, 414, 120, 10);
+		collision_14.name = "collision_14";
+		collision_14.visible = false;
+		collision_14.isFilled = true;
+
+		// collision_15
+		const collision_15 = this.add.rectangle(249, 412, 500, 10);
+		collision_15.name = "collision_15";
+		collision_15.visible = false;
+		collision_15.isFilled = true;
+
 		this.events.emit("scene-awake");
 	}
 
@@ -100,9 +174,11 @@ export default class River extends Phaser.Scene {
 
 	// Write your code here
 
-	create() {
+	preload() {
+		this.load.audio("river_muse", "assets/court_muse.m4a");
+	}
 
-		this.editorCreate();
+	create() {
 
 		this.editorCreate();
 
@@ -110,7 +186,18 @@ export default class River extends Phaser.Scene {
 
 		this.dialogueManager = new DialogueManager(this);
 
-		this.dialogueManager.text.setColor("#f8f8f8");
+		this.dialogueManager.text.setColor("#191817");
+		this.dialogueManager.text.y -= 60;
+
+		this.bgm = this.sound.add("river_muse", {
+			loop: true,
+			volume: 0.5
+		});
+
+		this.startBGM();
+
+		this.events.on("sleep", this.stopBGM, this);
+		this.events.on("wake", this.startBGM, this);
 
 		this.currentPuzzle = 0;
 
@@ -136,15 +223,11 @@ export default class River extends Phaser.Scene {
 		//success dialogue handling
 		this.events.on("puzzleCorrect", (puzzle) => {
 
-			console.log(this.dialogueManager.active)
-
 			if (puzzle.successDialogue?.length) {
 
-				console.log("in success dialogue")
 				this.dialogueManager.start(puzzle.successDialogue);
 
 				this.events.once("dialogueFinished", () => {
-					console.log("hello")
 					this.completePuzzle(puzzle);
 					this.interacting = false;
 				});
@@ -165,7 +248,7 @@ export default class River extends Phaser.Scene {
 					this.startPuzzleInput("11", puzzle);
 					break;
 				case 3:
-					this.startPuzzleInput("test", puzzle);
+					this.startPuzzleInput("ziziphus jujuba", puzzle);
 					break;
 				case 4:
 					this.startPuzzleInput("sisyphus", puzzle);
@@ -207,13 +290,14 @@ export default class River extends Phaser.Scene {
 
 					case 2:
 						obj.dialogue = [
-							"Soo, you're stuck here until you find the exit",
-							"In the meanwhile, do you remember how many texture bits were on the floor in the other area?"
+							"Merchant: Heyo, are you interested in some Nvidia stocks? (s)",
+							"Merchant: Also, do you remember how many texture bits were on the ground in the other area? (o)"
 						],
 							obj.successDialogue = [
-								"Nice",
-								"Hope you didn't have to restart for that",
-								"There's a potion on the table over there for you"
+								"Merchant: Nice (l)",
+								"Merchant: Hope you didn't have to restart for that (o)",
+								"Merchant: There's a potion on the table over there for you (n)",
+								"Merchant: (g)"
 							],
 							obj.action = "dialogue";
 						break;
@@ -242,23 +326,23 @@ export default class River extends Phaser.Scene {
 							obj.action = "dialogue";
 						break;
 
-					case 5: 
-							obj.dialogue = [
-								"The Winged Witness: Heye there",
-								"The Winged Witness: Want to play a game?",
-								"The Winged Witness: I'll give you a hint for the way out if you do",
-								"Har V: i'm sceptical",
-								"The Winged Witness: It's fun don't worry! I'm also really good at it",
-								"Har V: fine..",
-								"The Winged Witness: Eye spy with my little eye",
-								"The Winged Witness: Something beginnining with F"
-							],
+					case 5:
+						obj.dialogue = [
+							"The Winged Witness: Heye there",
+							"The Winged Witness: Want to play a game?",
+							"The Winged Witness: I'll give you a hint for the way out if you do",
+							"Har V: i'm sceptical",
+							"The Winged Witness: It's fun don't worry! I'm also really good at it",
+							"Har V: fine..",
+							"The Winged Witness: Eye spy with my little eye",
+							"The Winged Witness: Something beginnining with F"
+						],
 							obj.successDialogue = [
 								"The Winged Witness: Told you I'm good at it, that was a great find if I may say so myself",
 								"The Winged Witness: As promised, the one you're looking for is floppy"
 							],
 							obj.action = "dialogue"
-							break;
+						break;
 
 					case 6:
 						obj.dialogue = [
@@ -341,6 +425,25 @@ export default class River extends Phaser.Scene {
 		this.inputText.setVisible(false);
 
 
+	}
+
+	startBGM() {
+		if (!this.bgm) {
+			this.bgm = this.sound.add("river_muse", {
+				loop: true,
+				volume: 0.5
+			});
+		}
+
+		if (!this.bgm.isPlaying) {
+			this.bgm.play();
+		}
+	}
+
+	stopBGM() {
+		if (this.bgm && this.bgm.isPlaying) {
+			this.bgm.stop();
+		}
 	}
 
 	//after puzxle: this.input.keyboard.off("keydown", this.typeHandler);

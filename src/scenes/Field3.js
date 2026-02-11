@@ -141,7 +141,7 @@ export default class Field3 extends Phaser.Scene {
 						width: 40,
 						height: 30,
 						opacity: 1,
-						data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 977, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 988, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 982, 983, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 967, 968, 969, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 978, 979, 980, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 989, 990, 991, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1003, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+						data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 977, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 988, 0, 0, 995, 996, 997, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1006, 1007, 1008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 982, 983, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 967, 968, 969, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 978, 979, 980, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 989, 990, 991, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1003, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 976, 977, 976, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 987, 988, 987, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 987, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 964, 964, 965, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1000, 1001, 964, 965, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 					},
 					{
 						type: "tilelayer",
@@ -190,15 +190,33 @@ export default class Field3 extends Phaser.Scene {
 		// items
 		editabletilemap.createLayer("items", ["items","stands"], 0, 0);
 
-		// playerPrefab
-		const playerPrefab = new PlayerPrefab(this, 317, 313);
-		this.add.existing(playerPrefab);
+		// collision_cock
+		const collision_cock = this.add.rectangle(130, 420, 128, 128);
+		collision_cock.name = "collision_cock";
+		collision_cock.scaleX = 0.6304458971412823;
+		collision_cock.scaleY = 0.2383685338237117;
+		collision_cock.visible = false;
+		collision_cock.isFilled = true;
+
+		// collision_ball1
+		const collision_ball1 = this.add.rectangle(82, 396, 128, 128);
+		collision_ball1.name = "collision_ball1";
+		collision_ball1.scaleX = 0.28150100690260804;
+		collision_ball1.scaleY = 0.2934650954403445;
+		collision_ball1.visible = false;
+		collision_ball1.isFilled = true;
+
+		// collision_ball2
+		const collision_ball2 = this.add.rectangle(82, 445, 128, 128);
+		collision_ball2.name = "collision_ball2";
+		collision_ball2.scaleX = 0.28150100690260804;
+		collision_ball2.scaleY = 0.2934650954403445;
+		collision_ball2.visible = false;
+		collision_ball2.isFilled = true;
 
 		// puzzle_1
-		const puzzle_1 = this.add.rectangle(320, 240, 1900, 6500);
+		const puzzle_1 = this.add.rectangle(320, 240, 640, 480);
 		puzzle_1.name = "puzzle_1";
-		puzzle_1.scaleX = 0.33804362203924726;
-		puzzle_1.scaleY = 0.07646774195725983;
 		puzzle_1.visible = false;
 		puzzle_1.isFilled = true;
 
@@ -234,30 +252,6 @@ export default class Field3 extends Phaser.Scene {
 		puzzle_5.visible = false;
 		puzzle_5.isFilled = true;
 
-		// collision_cock
-		const collision_cock = this.add.rectangle(130, 420, 128, 128);
-		collision_cock.name = "collision_cock";
-		collision_cock.scaleX = 0.6304458971412823;
-		collision_cock.scaleY = 0.2383685338237117;
-		collision_cock.visible = false;
-		collision_cock.isFilled = true;
-
-		// collision_ball1
-		const collision_ball1 = this.add.rectangle(82, 396, 128, 128);
-		collision_ball1.name = "collision_ball1";
-		collision_ball1.scaleX = 0.28150100690260804;
-		collision_ball1.scaleY = 0.2934650954403445;
-		collision_ball1.visible = false;
-		collision_ball1.isFilled = true;
-
-		// collision_ball2
-		const collision_ball2 = this.add.rectangle(82, 445, 128, 128);
-		collision_ball2.name = "collision_ball2";
-		collision_ball2.scaleX = 0.28150100690260804;
-		collision_ball2.scaleY = 0.2934650954403445;
-		collision_ball2.visible = false;
-		collision_ball2.isFilled = true;
-
 		// puzzle_6
 		const puzzle_6 = this.add.rectangle(615, 424, 128, 128);
 		puzzle_6.name = "puzzle_6";
@@ -275,10 +269,8 @@ export default class Field3 extends Phaser.Scene {
 		puzzle_7.isFilled = true;
 
 		// puzzle_8
-		const puzzle_8 = this.add.rectangle(322, 246, 128, 128);
+		const puzzle_8 = this.add.rectangle(320, 240, 640, 480);
 		puzzle_8.name = "puzzle_8";
-		puzzle_8.scaleX = 5.072061507882986;
-		puzzle_8.scaleY = 4.0206819427212634;
 		puzzle_8.visible = false;
 		puzzle_8.isFilled = true;
 
@@ -289,6 +281,78 @@ export default class Field3 extends Phaser.Scene {
 		puzzle_9.scaleY = 0.12653958830306428;
 		puzzle_9.visible = false;
 		puzzle_9.isFilled = true;
+
+		// puzzle_10
+		const puzzle_10 = this.add.rectangle(320, 240, 640, 480);
+		puzzle_10.name = "puzzle_10";
+		puzzle_10.visible = false;
+		puzzle_10.isFilled = true;
+
+		// puzzle_11
+		const puzzle_11 = this.add.rectangle(80, 64, 20, 20);
+		puzzle_11.name = "puzzle_11";
+		puzzle_11.visible = false;
+		puzzle_11.isFilled = true;
+
+		// puzzle_12
+		const puzzle_12 = this.add.rectangle(544, 464, 20, 20);
+		puzzle_12.name = "puzzle_12";
+		puzzle_12.visible = false;
+		puzzle_12.isFilled = true;
+
+		// puzzle_13
+		const puzzle_13 = this.add.rectangle(48, 336, 20, 20);
+		puzzle_13.name = "puzzle_13";
+		puzzle_13.visible = false;
+		puzzle_13.isFilled = true;
+
+		// puzzle_14
+		const puzzle_14 = this.add.rectangle(90, 96, 30, 30);
+		puzzle_14.name = "puzzle_14";
+		puzzle_14.visible = false;
+		puzzle_14.isFilled = true;
+
+		// collision_stands1
+		const collision_stands1 = this.add.rectangle(295, 144, 150, 35);
+		collision_stands1.name = "collision_stands1";
+		collision_stands1.visible = false;
+		collision_stands1.isFilled = true;
+
+		// collision_stand2
+		const collision_stand2 = this.add.rectangle(288, 16, 90, 35);
+		collision_stand2.name = "collision_stand2";
+		collision_stand2.visible = false;
+		collision_stand2.isFilled = true;
+
+		// collision_stand3
+		const collision_stand3 = this.add.rectangle(432, 16, 90, 35);
+		collision_stand3.name = "collision_stand3";
+		collision_stand3.visible = false;
+		collision_stand3.isFilled = true;
+
+		// collision_stand6
+		const collision_stand6 = this.add.rectangle(360, 64, 20, 35);
+		collision_stand6.name = "collision_stand6";
+		collision_stand6.visible = false;
+		collision_stand6.isFilled = true;
+
+		// collision_stand5
+		const collision_stand5 = this.add.rectangle(215, 80, 20, 35);
+		collision_stand5.name = "collision_stand5";
+		collision_stand5.visible = false;
+		collision_stand5.isFilled = true;
+
+		// collision_stand4
+		const collision_stand4 = this.add.rectangle(288, 90, 70, 15);
+		collision_stand4.name = "collision_stand4";
+		collision_stand4.visible = false;
+		collision_stand4.isFilled = true;
+
+		// collision_stand
+		const collision_stand = this.add.rectangle(535, 198, 70, 15);
+		collision_stand.name = "collision_stand";
+		collision_stand.visible = false;
+		collision_stand.isFilled = true;
 
 		this.editabletilemap = editabletilemap;
 
@@ -302,6 +366,10 @@ export default class Field3 extends Phaser.Scene {
 
 	// Write your code here
 
+	preload() {
+		this.load.audio("main_muse", "assets/court_muse.m4a");
+	}
+
 
 	create() {
 
@@ -311,10 +379,23 @@ export default class Field3 extends Phaser.Scene {
 
 		this.dialogueManager = new DialogueManager(this);
 
+		this.bgm = this.sound.add("main_muse", {
+			loop: true,
+			volume: 0.3
+		});
+
+		this.startBGM();
+
+		this.events.on("sleep", this.stopBGM, this);
+		this.events.on("wake", this.startBGM, this);
+
 		// this.currentPuzzle = this.registry.get("puzzleProgress") ?? 0;
 		this.currentPuzzle = 0;
 
 		this.interacting = false;
+
+		this.typingActive = false;
+		this.typed = "";
 
 		this.input.keyboard.on("keydown-SPACE", () => {
 			if (this.dialogueManager.active) {
@@ -372,10 +453,25 @@ export default class Field3 extends Phaser.Scene {
 					this.startPuzzleInput("cock", puzzle);
 					break;
 				case 6:
-					this.startPuzzleInput("test", puzzle);
+					this.startPuzzleInput("kakorrhaphiophobia", puzzle);
 					break;
 				case 8:
 					this.startPuzzleInput("brewery", puzzle);
+					break;
+				case 10:
+					this.startPuzzleInput("53", puzzle);
+					break;
+				case 11:
+					this.completePuzzle(puzzle);
+					this.interacting = false;
+					break;
+				case 12:
+					this.completePuzzle(puzzle);
+					this.interacting = false;
+					break;
+				case 13:
+					this.completePuzzle(puzzle);
+					this.interacting = false;
 					break;
 			}
 
@@ -388,18 +484,29 @@ export default class Field3 extends Phaser.Scene {
 		this.spaceKey = this.input.keyboard.addKey("SPACE");
 		this.puzzles = this.physics.add.staticGroup();
 
+		// this.puzzles.children.iterate(puzzle => {
+		// 	if (puzzle.puzzleIndex <= this.currentPuzzle) {
+		// 		puzzle.body.checkCollision.none = true;
+		// 		puzzle.setVisible(false);
+		// 	}
+		// });
 		this.puzzles.children.iterate(puzzle => {
-			if (puzzle.puzzleIndex <= this.currentPuzzle) {
-				puzzle.body.checkCollision.none = true;
-				puzzle.setVisible(false);
+			puzzle.puzzleIndex = parseInt(puzzle.name.split("_")[1]);
+
+			if (puzzle.puzzleIndex !== this.currentPuzzle + 1) {
+				puzzle.body.enable = false;
+			} else {
+				puzzle.body.enable = true;
 			}
 		});
+
 
 
 		this.children.list.forEach(obj => {
 			if (obj.name && obj.name.startsWith("puzzle_")) {
 				this.physics.add.existing(obj, true);
 				this.puzzles.add(obj);
+
 
 				obj.puzzleIndex = parseInt(obj.name.split("_")[1]);
 
@@ -500,18 +607,63 @@ export default class Field3 extends Phaser.Scene {
 							],
 							obj.action = "dialogue";
 						break;
-					case 9: 
+					case 9:
 						obj.action = "scene";
 						obj.targetScene = "Court";
+						break;
+					case 10:
+						obj.dialogue = [
+							"Welcome back!",
+							"Did you have fun?",
+							"You're 2/3 of the way there",
+							"I'm sure you're tired of all these expositions",
+							"And maybe perhaps tired of restarting too",
+							"But I'm afraid I'm out of time and out of options",
+							"So I will use yours, thank you",
+							"How many of these world prompts have occured, not including the ones that started when you entered this area?",
+							"(World prompts meaning, not spoken by a named friend ..thing)"
+						]
+						obj.successDialogue = [
+							"Nice, I'm sure you're wondering who I am",
+							"Too bad there's not enough time to create a sick ass story for me",
+							"For now, I am world",
+							"Hello Har the Fifth",
+							"The expo continues (:moonface:)",
+							"Seek the place where objects forget the ground and remember the air."
+						]
+						obj.action = "dialogue";
+						break;
+					case 11:
+						obj.dialogue = [
+							"Even fallen trees remember the forest",
+							"Sit where the old trunk rests beside the tent"
+						],
+							obj.action = "dialogue";
+						break;
+					case 12:
+						obj.dialogue = [
+							"Seek the stones that remember the night"
+						],
+							obj.action = "dialogue";
+						break;
+					case 13:
+						obj.action = "scene";
+						obj.targetScene = "Ritual";
+						break;
+					case 14:
+						obj.action = "scene";
+						obj.targetScene = "creator2";
 						break;
 
 				}
 			}
 		});
 
-
 		//managing dialoge start and overlap on the screen
 		this.physics.add.overlap(this.player, this.puzzles, (player, puzzle) => {
+
+			if (puzzle.puzzleIndex !== this.currentPuzzle + 1) return;
+
 			if (this.typingActive) return;
 			if (!Phaser.Input.Keyboard.JustDown(this.spaceKey)) return;
 
@@ -539,9 +691,6 @@ export default class Field3 extends Phaser.Scene {
 							this.interacting = false;
 						});
 					}
-					// } else {
-					// 	this.dialogueManager.next();
-					// }
 					break;
 
 				case "scene":
@@ -563,6 +712,25 @@ export default class Field3 extends Phaser.Scene {
 		this.inputText.setVisible(false);
 
 
+	}
+
+	startBGM() {
+		if (!this.bgm) {
+			this.bgm = this.sound.add("main_muse", {
+				loop: true,
+				volume: 0.5
+			});
+		}
+
+		if (!this.bgm.isPlaying) {
+			this.bgm.play();
+		}
+	}
+
+	stopBGM() {
+		if (this.bgm && this.bgm.isPlaying) {
+			this.bgm.stop();
+		}
 	}
 
 	//after puzxle: this.input.keyboard.off("keydown", this.typeHandler);
@@ -624,6 +792,12 @@ export default class Field3 extends Phaser.Scene {
 
 	completePuzzle(puzzle) {
 		console.log("Completed puzzle", puzzle.puzzleIndex);
+
+		this.puzzles.children.iterate(puzzle => {
+			if (puzzle.puzzleIndex === this.currentPuzzle + 1) {
+				puzzle.body.enable = true;
+			}
+		});
 
 		this.registry.set("puzzleProgress", this.currentPuzzle);
 		puzzle.body.checkCollision.none = true;

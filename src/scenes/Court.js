@@ -25,10 +25,6 @@ export default class Court extends Phaser.Scene {
 		const court = this.add.sprite(321, 240, "court", 0);
 		court.play("court");
 
-		// playerPrefab
-		const playerPrefab = new PlayerPrefab(this, 465, 133);
-		this.add.existing(playerPrefab);
-
 		// puzzle_1
 		const puzzle_1 = this.add.rectangle(-1, -2, 640, 480);
 		puzzle_1.name = "puzzle_1";
@@ -54,6 +50,61 @@ export default class Court extends Phaser.Scene {
 		puzzle_3.visible = false;
 		puzzle_3.isFilled = true;
 
+		// slime
+		const slime = this.add.sprite(145, 108, "slime", 131);
+		slime.scaleX = 3;
+		slime.scaleY = 3;
+		slime.play("slime");
+
+		// puzzle_4
+		const puzzle_4 = this.add.rectangle(145, 128, 25, 20);
+		puzzle_4.name = "puzzle_4";
+		puzzle_4.visible = false;
+		puzzle_4.isFilled = true;
+
+		// puzzle_5
+		const puzzle_5 = this.add.rectangle(152, 387, 20, 20);
+		puzzle_5.name = "puzzle_5";
+		puzzle_5.visible = false;
+		puzzle_5.isFilled = true;
+
+		// chesst_puzzle
+		const chesst_puzzle = this.add.image(309, 252, "chess_puzzle1");
+		chesst_puzzle.name = "chesst_puzzle";
+		chesst_puzzle.scaleX = 0.4;
+		chesst_puzzle.scaleY = 0.4;
+		chesst_puzzle.visible = false;
+
+		// puzzle_6
+		const puzzle_6 = this.add.rectangle(508, 358, 20, 20);
+		puzzle_6.name = "puzzle_6";
+		puzzle_6.visible = false;
+		puzzle_6.isFilled = true;
+
+		// collision_border1
+		const collision_border1 = this.add.rectangle(252, 62, 500, 10);
+		collision_border1.name = "collision_border1";
+		collision_border1.visible = false;
+		collision_border1.isFilled = true;
+
+		// collision_border2
+		const collision_border2 = this.add.rectangle(62, 415, 120, 10);
+		collision_border2.name = "collision_border2";
+		collision_border2.visible = false;
+		collision_border2.isFilled = true;
+
+		// collision_border3
+		const collision_border3 = this.add.rectangle(583, 62, 120, 10);
+		collision_border3.name = "collision_border3";
+		collision_border3.visible = false;
+		collision_border3.isFilled = true;
+
+		// collision_border4
+		const collision_border4 = this.add.rectangle(389, 418, 500, 10);
+		collision_border4.name = "collision_border4";
+		collision_border4.visible = false;
+		collision_border4.isFilled = true;
+
 		this.events.emit("scene-awake");
 	}
 
@@ -61,9 +112,12 @@ export default class Court extends Phaser.Scene {
 
 	// Write your code here
 
-	create() {
+	preload() {
+		this.load.image("chesst_puzzle", "assets/chess_puzzle1.png");
+		this.load.audio("court_muse", "assets/court_muse.m4a");
+	}
 
-		this.editorCreate();
+	create() {
 
 		this.editorCreate();
 
@@ -71,7 +125,17 @@ export default class Court extends Phaser.Scene {
 
 		this.dialogueManager = new DialogueManager(this);
 
-		this.dialogueManager.text.setColor("#f8f8f8");
+		this.dialogueManager.text.setColor("#FFD966");
+
+		this.bgm = this.sound.add("court_muse", {
+			loop: true,
+			volume: 0.5
+		});
+
+		this.startBGM();
+
+		this.events.on("sleep", this.stopBGM, this);
+		this.events.on("wake", this.startBGM, this);
 
 		// this.currentPuzzle = this.registry.get("puzzleProgress") ?? 0;
 		this.currentPuzzle = 0;
@@ -117,9 +181,17 @@ export default class Court extends Phaser.Scene {
 					this.completePuzzle(puzzle);
 					this.interacting = false;
 					break;
-				case 2: 
+				case 2:
 					this.startPuzzleInput("peaches", puzzle);
 					break;
+				case 3:
+					this.startPuzzleInput("capybara", puzzle);
+					break;
+				case 4:
+					this.startPuzzleInput("cross", puzzle);
+					break;
+				case 5:
+					this.startPuzzleInput("ra6 b7", puzzle);
 			}
 
 			this.currentPuzzle = puzzle.puzzleIndex;
@@ -153,36 +225,88 @@ export default class Court extends Phaser.Scene {
 							"This is the market court where you can find hidden items not available in other areas",
 							"Speak to the one who offers guidance to those who are lost"
 						],
-						obj.action = "dialogue";
+							obj.action = "dialogue";
 						break;
 
 					case 2:
 						obj.dialogue = [
 							"Elder: The bees debated, the butterflies listened, and the birds concluded:",
-							"not of iron or smoke, but of orchards kissed by dawn.",
+							"Elder: not of iron or smoke, but of orchards kissed by dawn.",
 							"Elder: Tell me, wanderer… what fruit clings to your spirit?"
 						],
-						obj.successDialogue = [
-							"Elder: A peach is shaped by sun and soil, but sweetness comes from within.",
-							"Life gives you the branch -",
-							"but you decide which fruit you become.",
-							"And it seems you have",
-							"What a sweet, vibrant, and brilliant peach you have become Har the fifth",
-							"Kudos",
-							"Walk to the gathering circle where the stools stand empty",
-							"Sit, and listen. Your path forward from now will become clear."
-						]
+							obj.successDialogue = [
+								"Elder: A peach is shaped by sun and soil, but sweetness comes from within.",
+								"Life gives you the branch -",
+								"But you decide which fruit you become.",
+								"And it seems you have",
+								"What a sweet, vibrant, and brilliant peach you have become Har the fifth",
+								"Kudos",
+								"Walk to the gathering circle where the stools stand empty",
+								"Sit, and listen. Your path forward from now will become clear."
+							]
 						obj.action = "dialogue";
 						break;
-					case 3: 
+					case 3:
 						obj.dialogue = [
-							"loading.."
-						];
+							"The way forward ey...",
+							"The old man likes to throw me under the bus",
+							"I'm not sure",
+							"All I know is, a walked path becomes a path made",
+							"And things will happen that are outside of your control",
+							"Getting sent a random gif during the day for example",
+							"What was that animal?",
+						],
+							obj.successDialogue = [
+								"Ahh yes that's right, the capybara",
+								"What a wonderful animal",
+								"So chill",
+								"A lot like Rev. Squidge over there"
+							]
 						obj.action = "dialogue";
 						break;
+
+					case 4:
+						obj.dialogue = [
+							"Rev. Squidge: Blessings upon you",
+							"Rev. Squidge: Do you remember what particular shape of grass was on the groud in the large field area over there?"
+						],
+							obj.successDialogue = [
+								"Rev. Squidge: That's right, a holy cross!",
+								"Rev. Squidge: Like all things, it was gods work for it to have grown like that",
+								"Rev. Squidge: What a blessed space",
+								"Rev. Squidge: Unlike a certain chest in this area, I've had people complaining to me about the voices they hear from within.."
+							]
+						obj.action = "dialogue";
+						break;
+					case 5:
+						obj.dialogue = [
+							"Chester: Hey you, want to do a puzzle?",
+							"Chester: I've got a great one for you",
+							"Har the Fifth: will you show me the way out if I do",
+							"Chester: Sure!"
+						],
+							obj.successDialogue = [
+								"Chester: Wow you're really good at this",
+								"Chester: The exit is that way",
+								"Har the Fifth: .....",
+								"Chester: .....",
+								"Chester: Oh right yeah I have no fingers to point",
+								"Chester: That way over by the caravan",
+								"Har the Fifth: thanks"
+							],
+							obj.puzzleImageKey = "chesst_puzzle";
+						obj.action = "dialogue";
+						break;
+					case 6:
+						obj.action = "scene";
+						obj.targetScene = "Field3";
+						break;
+
 				}
 			}
 		});
+
+
 
 
 		//managing dialoge start and overlap on the screen
@@ -237,6 +361,25 @@ export default class Court extends Phaser.Scene {
 
 	}
 
+	startBGM() {
+		if (!this.bgm) {
+			this.bgm = this.sound.add("court_muse", {
+				loop: true,
+				volume: 0.5
+			});
+		}
+
+		if (!this.bgm.isPlaying) {
+			this.bgm.play();
+		}
+	}
+
+	stopBGM() {
+		if (this.bgm && this.bgm.isPlaying) {
+			this.bgm.stop();
+		}
+	}
+
 	startPuzzleInput(expectedWord, puzzle) {
 
 		this.expectedWord = expectedWord;
@@ -248,6 +391,12 @@ export default class Court extends Phaser.Scene {
 		this.typingActive = true;
 
 		this.inputText.setVisible(true);
+
+		if (puzzle.puzzleImageKey) {
+			this.puzzleImage = this.children.getByName(puzzle.puzzleImageKey);
+			this.puzzleImage.setVisible(true);
+			this.puzzleImage.setDepth(200);
+		}
 
 		puzzle.body.enable = false
 
@@ -283,6 +432,11 @@ export default class Court extends Phaser.Scene {
 			this.typingActive = false;
 			this.input.keyboard.off("keydown", this.typeHandler);
 			this.inputText.setVisible(false);
+
+			if (this.puzzleImage) {
+				this.puzzleImage.destroy();
+				this.puzzleImage = null;
+			}
 
 			this.events.emit("puzzleCorrect", this.inputPuzzle)
 

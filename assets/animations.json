@@ -357,114 +357,6 @@
                     "frame": 5,
                     "duration": 0,
                     "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 6,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 7,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 8,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 9,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 10,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 11,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 12,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 13,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 14,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 15,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 16,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 17,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 18,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 19,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 20,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 21,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 22,
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "court",
-                    "frame": 23,
-                    "duration": 0,
-                    "keyframe": false
                 }
             ],
             "frameRate": 8,
@@ -850,6 +742,160 @@
                 }
             ],
             "frameRate": 3,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "me_idle",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "me",
+                    "frame": 6,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me",
+                    "frame": 7,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me",
+                    "frame": 8,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me",
+                    "frame": 9,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 6,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "me_flop",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "me_flop",
+                    "frame": 99,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me_flop",
+                    "frame": 100,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me_flop",
+                    "frame": 101,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me_flop",
+                    "frame": 102,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 6,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "me_smith",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "me_smith",
+                    "frame": 36,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me_smith",
+                    "frame": 37,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me_smith",
+                    "frame": 38,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me_smith",
+                    "frame": 39,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me_smith",
+                    "frame": 40,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me_smith",
+                    "frame": 41,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "me_smith",
+                    "frame": 42,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 8,
+            "skipMissedFrames": true,
+            "repeat": -1,
+            "randomFrame": false
+        },
+        {
+            "key": "water",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "water_tileset",
+                    "frame": 143,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "water_tileset",
+                    "frame": 144,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "water_tileset",
+                    "frame": 145,
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "water_tileset",
+                    "frame": 146,
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 6,
             "skipMissedFrames": true,
             "repeat": -1,
             "randomFrame": false

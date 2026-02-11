@@ -43,12 +43,25 @@ export default class Title extends Phaser.Scene {
 
 	// Write your code here
 
+	// preload(){
+	// 	this.load.audio('titleMusic', 'assets/audio/title_music.mp3');
+	// }
+
 	create() {
 
 		this.editorCreate();
 
+		this.titleMusic = this.sound.add('title_loop', {
+			loop: true, 
+			volume: 0.5   
+		});
+
+		this.titleMusic.play();
+
+
 		this.input.once(Phaser.Input.Events.POINTER_DOWN, () => {
-			this.scene.start('Field3')
+			this.titleMusic.stop();
+			this.scene.start('River')
 		})
 	}
 	/* END-USER-CODE */

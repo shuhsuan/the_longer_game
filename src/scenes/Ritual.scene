@@ -24,6 +24,137 @@
             "y": 241,
             "animationPlayMethod": 1,
             "animationKey": "ritual"
+        },
+        {
+            "prefabId": "3ea1c08f-f385-43d6-9825-802596c52b31",
+            "id": "8220c91c-a89a-47e0-83da-60fd63a3a6de",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "playerPrefab",
+            "x": 303,
+            "y": 286
+        },
+        {
+            "type": "Rectangle",
+            "id": "ab6cc516-a176-4fd1-82a7-b019a4ff9289",
+            "label": "puzzle_1",
+            "useGameObjectName": true,
+            "x": 321,
+            "y": 241,
+            "visible": false,
+            "isFilled": true,
+            "width": 640,
+            "height": 480
+        },
+        {
+            "type": "Rectangle",
+            "id": "bd0482d4-08ad-4bde-bb84-2ff2dbb73261",
+            "label": "puzzle_2",
+            "useGameObjectName": true,
+            "x": 355,
+            "y": 165,
+            "visible": false,
+            "isFilled": true,
+            "width": 30,
+            "height": 30
+        },
+        {
+            "type": "Rectangle",
+            "id": "e1ddfbf3-e7bc-4508-8960-f1b6461bdda4",
+            "label": "puzzle_3",
+            "useGameObjectName": true,
+            "x": 88,
+            "y": 348,
+            "visible": false,
+            "isFilled": true,
+            "width": 30,
+            "height": 30
+        },
+        {
+            "type": "Rectangle",
+            "id": "df51e39c-f3a9-4885-b437-af52dc37df92",
+            "label": "puzzle_4",
+            "useGameObjectName": true,
+            "x": 520,
+            "y": 261,
+            "visible": false,
+            "isFilled": true,
+            "width": 30,
+            "height": 30
+        },
+        {
+            "type": "Rectangle",
+            "id": "b060a219-8574-45c6-b146-4c7b3b2e7e5c",
+            "label": "puzzle_5",
+            "useGameObjectName": true,
+            "x": 22,
+            "y": 94,
+            "visible": false,
+            "isFilled": true,
+            "width": 30,
+            "height": 30
+        },
+        {
+            "type": "Rectangle",
+            "id": "18209350-0e7d-42fd-9c51-56fed1eb6fba",
+            "label": "puzzle_6",
+            "useGameObjectName": true,
+            "x": 241,
+            "y": 324,
+            "visible": false,
+            "isFilled": true,
+            "width": 20,
+            "height": 20
+        },
+        {
+            "type": "Rectangle",
+            "id": "93e7fcef-fee1-4107-be5a-aad1c4c2928c",
+            "label": "collision_1",
+            "useGameObjectName": true,
+            "x": 390,
+            "y": 63,
+            "visible": false,
+            "isFilled": true,
+            "width": 500,
+            "height": 10
+        },
+        {
+            "type": "Rectangle",
+            "id": "fc250eea-7c95-4008-af86-fc210f6939e0",
+            "label": "collision_2",
+            "useGameObjectName": true,
+            "x": 62,
+            "y": 63,
+            "visible": false,
+            "isFilled": true,
+            "width": 120,
+            "height": 10
+        },
+        {
+            "type": "Rectangle",
+            "id": "7939b3f5-c606-4336-a842-4313d9494e99",
+            "label": "collision",
+            "useGameObjectName": true,
+            "x": 578,
+            "y": 417,
+            "visible": false,
+            "isFilled": true,
+            "width": 120,
+            "height": 10
+        },
+        {
+            "type": "Rectangle",
+            "id": "ef435ab9-7e23-497a-806c-01b93eab51fd",
+            "label": "collision_4",
+            "useGameObjectName": true,
+            "x": 252,
+            "y": 415,
+            "visible": false,
+            "isFilled": true,
+            "width": 500,
+            "height": 10
         }
     ],
     "plainObjects": [],

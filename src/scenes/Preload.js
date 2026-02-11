@@ -56,11 +56,11 @@ export default class Preload extends Phaser.Scene {
 
 	preload() {
 
-		this.editorCreate();
-
 		this.editorPreload();
 
-		const width =  this.progressBar.width;
+		this.editorCreate();
+
+		const width = this.progressBar.width;
 
 		this.load.on("progress", (progress) => {
 
@@ -69,7 +69,6 @@ export default class Preload extends Phaser.Scene {
 	}
 
 	create() {
-
 		this.scene.start("Title");
 	}
 

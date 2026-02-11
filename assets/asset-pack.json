@@ -7,6 +7,13 @@
                 "key": "animations"
             },
             {
+                "url": [
+                    "assets/around.mp3"
+                ],
+                "type": "audio",
+                "key": "around"
+            },
+            {
                 "url": "assets/blacksmith.png",
                 "frameConfig": {
                     "frameWidth": 25,
@@ -18,6 +25,11 @@
                 },
                 "type": "spritesheet",
                 "key": "blacksmith"
+            },
+            {
+                "url": "assets/chess_puzzle1.png",
+                "type": "image",
+                "key": "chess_puzzle1"
             },
             {
                 "url": "assets/court.png",
@@ -33,6 +45,13 @@
                 "key": "court"
             },
             {
+                "url": [
+                    "assets/court_muse.m4a"
+                ],
+                "type": "audio",
+                "key": "court_muse"
+            },
+            {
                 "url": "assets/flying_eye.png",
                 "frameConfig": {
                     "frameWidth": 32,
@@ -44,6 +63,13 @@
                 },
                 "type": "spritesheet",
                 "key": "flying_eye"
+            },
+            {
+                "url": [
+                    "assets/god.mp3"
+                ],
+                "type": "audio",
+                "key": "god"
             },
             {
                 "url": "assets/ground.png",
@@ -72,6 +98,23 @@
                 "key": "harV"
             },
             {
+                "url": [
+                    "assets/heheV.mp4"
+                ],
+                "type": "video",
+                "key": "heheV"
+            },
+            {
+                "url": "assets/invite1.png",
+                "type": "image",
+                "key": "invite"
+            },
+            {
+                "url": "assets/invite2.png",
+                "type": "image",
+                "key": "invite2"
+            },
+            {
                 "url": "assets/items.png",
                 "frameConfig": {
                     "frameWidth": 16,
@@ -83,6 +126,59 @@
                 },
                 "type": "spritesheet",
                 "key": "items"
+            },
+            {
+                "url": [
+                    "assets/main_muse.m4a"
+                ],
+                "type": "audio",
+                "key": "main_muse"
+            },
+            {
+                "url": "assets/me.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "me"
+            },
+            {
+                "url": "assets/me_flop.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "me_flop"
+            },
+            {
+                "url": [
+                    "assets/me_muse.m4a"
+                ],
+                "type": "audio",
+                "key": "me_muse"
+            },
+            {
+                "url": "assets/me_smith.png",
+                "frameConfig": {
+                    "frameWidth": 25,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "me_smith"
             },
             {
                 "url": "assets/Merchant.png",
@@ -105,37 +201,17 @@
                 "key": "Minecraft"
             },
             {
-                "url": "assets/new_area_640.png",
+                "url": "assets/my_house.png",
                 "frameConfig": {
-                    "frameWidth": 32,
-                    "frameHeight": 32,
+                    "frameWidth": 16,
+                    "frameHeight": 16,
                     "startFrame": 0,
                     "endFrame": -1,
                     "spacing": 0,
                     "margin": 0
                 },
                 "type": "spritesheet",
-                "key": "new_area_640"
-            },
-            {
-                "url": "assets/new_area_normal.png",
-                "frameConfig": {
-                    "frameWidth": 1216,
-                    "frameHeight": 640,
-                    "startFrame": 0,
-                    "endFrame": -1,
-                    "spacing": 0,
-                    "margin": 0
-                },
-                "type": "spritesheet",
-                "key": "new_area_normal"
-            },
-            {
-                "url": "assets/pixel_font.ttf",
-                "format": "truetype",
-                "descriptors": {},
-                "type": "font",
-                "key": "pixel_font"
+                "key": "my_house"
             },
             {
                 "url": "assets/PixelifySans-SemiBold.ttf",
@@ -184,6 +260,27 @@
                 "key": "river"
             },
             {
+                "url": [
+                    "assets/river_muse.m4a"
+                ],
+                "type": "audio",
+                "key": "river_muse"
+            },
+            {
+                "url": [
+                    "assets/running.mp3"
+                ],
+                "type": "audio",
+                "key": "running"
+            },
+            {
+                "url": [
+                    "assets/running1.m4a"
+                ],
+                "type": "audio",
+                "key": "running1"
+            },
+            {
                 "url": "assets/slime.png",
                 "frameConfig": {
                     "frameWidth": 16,
@@ -195,6 +292,13 @@
                 },
                 "type": "spritesheet",
                 "key": "slime"
+            },
+            {
+                "url": [
+                    "assets/so.mp3"
+                ],
+                "type": "audio",
+                "key": "so"
             },
             {
                 "url": "assets/speech.png",
@@ -241,17 +345,11 @@
                 "key": "structures"
             },
             {
-                "url": "assets/test.png",
-                "frameConfig": {
-                    "frameWidth": 640,
-                    "frameHeight": 480,
-                    "startFrame": 0,
-                    "endFrame": -1,
-                    "spacing": 0,
-                    "margin": 0
-                },
-                "type": "spritesheet",
-                "key": "test"
+                "url": [
+                    "assets/title_loop.wav"
+                ],
+                "type": "audio",
+                "key": "title_loop"
             },
             {
                 "url": "assets/village_hill.png",
@@ -265,6 +363,32 @@
                 },
                 "type": "spritesheet",
                 "key": "village_hill"
+            },
+            {
+                "url": "assets/water_tileset.png",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "water_tileset"
+            },
+            {
+                "url": "assets/water2.gif",
+                "frameConfig": {
+                    "frameWidth": 16,
+                    "frameHeight": 16,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "water2"
             },
             {
                 "url": "assets/wise_elder.png",
