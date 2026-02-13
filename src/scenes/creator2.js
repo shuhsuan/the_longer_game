@@ -484,7 +484,7 @@ export default class creator2 extends Phaser.Scene {
 							"Shu: Both physically and kind of on the day when I was trying to finish this XD",
 							"Shu: You'll never have guessed it but was so much debugging",
 							"Shu: Anyways",
-							"Shu: How old are you again?",
+							"Shu: What year were you born in again?",
 							"HarV: 19-"
 						]
 						obj.action = "dialogue";
