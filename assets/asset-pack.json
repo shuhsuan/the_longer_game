@@ -115,6 +115,11 @@
                 "key": "invite2"
             },
             {
+                "url": "assets/invite3.png",
+                "type": "image",
+                "key": "invite3"
+            },
+            {
                 "url": "assets/items.png",
                 "frameConfig": {
                     "frameWidth": 16,

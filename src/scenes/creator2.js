@@ -345,6 +345,13 @@ export default class creator2 extends Phaser.Scene {
 		collision_8.visible = false;
 		collision_8.isFilled = true;
 
+		// invite3
+		const invite3 = this.add.image(326, 242, "invite3");
+		invite3.name = "invite3";
+		invite3.scaleX = 0.7;
+		invite3.scaleY = 0.7;
+		invite3.visible = false;
+
 		this.editabletilemap = editabletilemap;
 
 		this.events.emit("scene-awake");
@@ -503,7 +510,7 @@ export default class creator2 extends Phaser.Scene {
 							"Well, can't promise I'll stop teasing you, but I can deliver the promised gift",
 							"It's terribly easy to read ik"
 						],
-							obj.puzzleImageKey = "invite2";
+							obj.puzzleImageKey = "invite3";
 						obj.action = "dialogue";
 						break;
 

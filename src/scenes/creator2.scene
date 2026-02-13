@@ -455,6 +455,20 @@
             "isFilled": true,
             "width": 10,
             "height": 200
+        },
+        {
+            "type": "Image",
+            "id": "18f92453-a243-475e-a807-e01835bbcb20",
+            "label": "invite3",
+            "useGameObjectName": true,
+            "texture": {
+                "key": "invite3"
+            },
+            "x": 326,
+            "y": 242,
+            "scaleX": 0.7,
+            "scaleY": 0.7,
+            "visible": false
         }
     ],
     "plainObjects": [
